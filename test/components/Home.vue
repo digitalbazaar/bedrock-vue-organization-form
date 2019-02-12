@@ -3,7 +3,7 @@
     class="column gutter-md background"
     padding>
     <div class="column items-center">
-      <br-organization-form />
+      <br-organization-form v-model="form" />
     </div>
   </q-page>
 </template>
@@ -19,7 +19,16 @@ export default {
   name: 'Home',
   components: {BrOrganizationForm},
   data() {
-    return {};
+    return {
+      form: {
+        legalName: {
+          value: ''
+        },
+        entityType: {
+          value: ''
+        }
+      }
+    };
   }
 };
 </script>
