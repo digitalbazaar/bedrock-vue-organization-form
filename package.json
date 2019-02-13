@@ -23,8 +23,5 @@
   "bugs": {
     "url": "https://github.com/digitalbazaar/bedrock-vue-organization-form/issues"
   },
-  "homepage": "https://github.com/digitalbazaar/bedrock-vue-organization-form",
-  "bedrock": {
-    "browserDependencies": "all"
-  }
+  "homepage": "https://github.com/digitalbazaar/bedrock-vue-organization-form"
 }
