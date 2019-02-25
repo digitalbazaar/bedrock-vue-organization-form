@@ -34,6 +34,9 @@
           @keyup="$v.entityType.$touch" />
       </q-field>
     </div>
+    <div class="col-xs-12">
+      <slot />
+    </div>
   </div>
 </template>
 
