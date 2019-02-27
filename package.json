@@ -1,6 +1,6 @@
 {
   "name": "bedrock-vue-organization-form",
-  "version": "1.0.0",
+  "version": "1.0.1-0",
   "description": "Vue.js organization-form component for Bedrock Web apps",
   "main": "index.js",
   "peerDependencies": {
