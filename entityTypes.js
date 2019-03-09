@@ -1,4 +1,16 @@
+/*!
+ * Copyright (c) 2019 Digital Bazaar, Inc. All rights reserved.
+ */
+'use strict';
+
+// Entity Types were gathered from Wikipedia:
+// https://en.wikipedia.org/wiki/List_of_legal_entity_types_by_country
+
 export default [
+  {
+    "label": "Sole Proprietorship",
+    "value": "SP"
+  },
   {
     "label": "General Partnership",
     "value": "GP"
@@ -18,6 +30,10 @@ export default [
   {
     "label": "Limited Liability Company",
     "value": "LLC"
+  },
+  {
+    "label": "Professional Limited Liability Company",
+    "value": "PLLC"
   },
   {
     "label": "C-Corporation",
