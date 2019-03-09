@@ -1,34 +1,58 @@
+/*!
+ * Copyright (c) 2019 Digital Bazaar, Inc. All rights reserved.
+ */
+'use strict';
+
+// Entity Types were gathered from Wikipedia:
+// https://en.wikipedia.org/wiki/List_of_legal_entity_types_by_country
+
 export default [
   {
-    "label": "General Partnership",
-    "value": "GP"
+    label: 'Sole Proprietorship',
+    value: 'SP'
   },
   {
-    "label": "Limited Partnership",
-    "value": "LP"
+    label: 'General Partnership',
+    value: 'GP'
   },
   {
-    "label": "Limited Liability Partnership",
-    "value": "LLP"
+    label: 'Limited Partnership',
+    value: 'LP'
   },
   {
-    "label": "Limited Liability Limited Company",
-    "value": "LLLP"
+    label: 'Limited Liability Partnership',
+    value: 'LLP'
   },
   {
-    "label": "Limited Liability Company",
-    "value": "LLC"
+    label: 'Limited Liability Limited Partnership',
+    value: 'LLLP'
   },
   {
-    "label": "C-Corporation",
-    "value": "C-CORP"
+    label: 'Limited Liability Company',
+    value: 'LLC'
   },
   {
-    "label": "S-Corporation",
-    "value": "S-CORP"
+    label: 'Professional Limited Liability Company',
+    value: 'PLLC'
   },
   {
-    "label": "Professional Corporation",
-    "value": "PC"
+    label: 'C-Corporation',
+    value: 'C-CORP'
+  },
+  {
+    label: 'S-Corporation',
+    value: 'S-CORP'
+  },
+  {
+    label: 'Professional Corporation',
+    value: 'PC'
+  },
+  {
+    label: 'Unlimited Liability Corporation',
+    value: 'ULC'
+  },
+  {
+    label: 'Joint Venture',
+    value: 'JV'
   }
 ];
