@@ -46,5 +46,13 @@ export default [
   {
     "label": "Professional Corporation",
     "value": "PC"
+  },
+  {
+    "label": "Unlimited Liability Corporation",
+    "value": "ULC"
+  },
+  {
+    "label": "Joint Venture",
+    "value": "JV"
   }
 ];
