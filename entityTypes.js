@@ -24,7 +24,7 @@ export default [
     "value": "LLP"
   },
   {
-    "label": "Limited Liability Limited Company",
+    "label": "Limited Liability Limited Partnership",
     "value": "LLLP"
   },
   {
