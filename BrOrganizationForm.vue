@@ -1,38 +1,33 @@
 <template>
   <div class="fit">
     <div class="q-mt-md">
-      <q-field :error="$v.legalName.$error">
-        <q-input
-          v-model="legalName.value"
-          :float-label="legalName.label"
-          class="q-pa-sm q-mt-md"
-          @blur="$v.legalName.$touch"
-          @keyup="$v.legalName.$touch" />
-      </q-field>
+      <q-input
+        v-model="legalName.value"
+        :label="legalName.label"
+        class="q-pa-sm q-mt-md"
+        :error="$v.legalName.$error"
+        @blur="$v.legalName.$touch"
+        @keyup="$v.legalName.$touch" />
     </div>
     <!-- <div class="col-xs-12">
-      <q-field :error="$v.logo.$error">
         <q-select
           v-model="logo.value"
-          :float-label="logo.label"
+          :label="logo.label"
           filter
           :options="entityLogos"
+          :error="$v.logo.$error"
           class="q-pa-sm q-mt-md"
           @blur="$v.logo.$touch"
           @keyup="$v.logo.$touch" />
-      </q-field>
     </div> -->
     <div class="col-xs-12">
-      <q-field :error="$v.entityType.$error">
-        <q-select
-          v-model="entityType.value"
-          :float-label="entityType.label"
-          filter
-          :options="entityTypes"
-          class="q-pa-sm q-mt-md"
-          @blur="$v.entityType.$touch"
-          @keyup="$v.entityType.$touch" />
-      </q-field>
+      <q-select
+        v-model="entityType.value"
+        :label="entityType.label"
+        :options="entityTypes"
+        :error="$v.entityType.$error"
+        class="q-pa-sm q-mt-md"
+        @input="$v.entityType.$touch" />
     </div>
     <div class="col-xs-12">
       <slot />
