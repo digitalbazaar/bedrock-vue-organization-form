@@ -4,7 +4,7 @@
   "description": "Vue.js organization-form component for Bedrock Web apps",
   "main": "index.js",
   "peerDependencies": {
-    "bedrock-quasar": "^2.0.0",
+    "bedrock-quasar": "digitalbazaar/bedrock-quasar#v1",
     "vue": "^2.5.16",
     "vuelidate": "^0.7.4"
   },
@@ -23,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/digitalbazaar/bedrock-vue-organization-form/issues"
   },
-  "homepage": "https://github.com/digitalbazaar/bedrock-vue-organization-form"
+  "homepage": "https://github.com/digitalbazaar/bedrock-vue-organization-form",
+  "devDependencies": {
+    "eslint": "^5.15.1",
+    "eslint-config-digitalbazaar": "^1.8.0",
+    "eslint-plugin-vue": "^5.2.2"
+  }
 }
