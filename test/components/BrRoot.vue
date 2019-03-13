@@ -1,21 +1,17 @@
 <template>
   <q-layout>
-
-    <q-layout-header>
+    <q-header>
       <q-toolbar>
         <q-toolbar-title>
           Bedrock Organization Form Test
         </q-toolbar-title>
       </q-toolbar>
-    </q-layout-header>
+    </q-header>
 
     <q-page-container>
-      <router-view/>
+      <router-view />
     </q-page-container>
-
-    <q-layout-footer>
-    </q-layout-footer>
-
+    <q-footer />
   </q-layout>
 </template>
 <script>
