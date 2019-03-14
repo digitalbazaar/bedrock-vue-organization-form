@@ -3,7 +3,7 @@
     <div class="q-mt-md">
       <q-input
         v-model="legalName.value"
-        :float-label="legalName.label"
+        :label="legalName.label"
         class="q-pa-sm q-mt-md"
         :error="$v.legalName.$error"
         @blur="$v.legalName.$touch"
@@ -13,7 +13,7 @@
       <q-field :error="$v.logo.$error">
         <q-select
           v-model="logo.value"
-          :float-label="logo.label"
+          :label="logo.label"
           filter
           :options="entityLogos"
           class="q-pa-sm q-mt-md"
