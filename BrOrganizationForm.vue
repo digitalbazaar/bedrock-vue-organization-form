@@ -24,11 +24,12 @@
     <div class="col-xs-12">
       <q-select
         v-model="entityType.value"
+        use-input
         :float-label="entityType.label"
-        filter
         :options="entityTypes"
         :error="$v.entityType.$error"
         class="q-pa-sm q-mt-md"
+        @filter="filterEntities"
         @blur="$v.entityType.$touch"
         @keyup="$v.entityType.$touch" />
     </div>
@@ -107,6 +108,15 @@ export default {
           entityType: 'Entity Type'
         }});
       this.$emit('input', updatedLabels);
+    },
+    filterEntities(val, update) {
+      console.log(val);
+      if(!val) {
+        update(() => this.entityTypes = entityTypes);
+      }
+      const startsWith = new RegExp(`^${val}`);
+      update(() => this.entityTypes = entityTypes.filter(
+        ({label, value}) => startsWith.test(label) || startsWith.test(value)));
     }
   }
 };
