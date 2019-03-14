@@ -110,7 +110,7 @@ export default {
       this.$emit('input', updatedLabels);
     },
     filterEntities(val, update) {
-      console.log(val);
+      this.entityType.value = '';
       if(!val) {
         update(() => this.entityTypes = entityTypes);
       }
