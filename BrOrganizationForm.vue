@@ -31,7 +31,15 @@
         class="q-pa-sm q-mt-md"
         @filter="filterEntities"
         @blur="$v.entityType.$touch"
-        @keyup="$v.entityType.$touch" />
+        @keyup="$v.entityType.$touch">
+        <template v-slot:no-option>
+          <q-item>
+            <q-item-section class="text-grey">
+              No results
+            </q-item-section>
+          </q-item>
+        </template>
+      </q-select>
     </div>
     <div class="col-xs-12">
       <slot />
@@ -78,7 +86,8 @@ export default {
   },
   data() {
     return {
-      entityTypes
+      entityTypes,
+      previousEntityType: null
     };
   },
   computed: {
@@ -114,7 +123,7 @@ export default {
       if(!val) {
         update(() => this.entityTypes = entityTypes);
       }
-      const startsWith = new RegExp(`^${val}`);
+      const startsWith = new RegExp(`^${val}`, 'i');
       update(() => this.entityTypes = entityTypes.filter(
         ({label, value}) => startsWith.test(label) || startsWith.test(value)));
     }
