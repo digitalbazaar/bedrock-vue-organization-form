@@ -25,7 +25,7 @@
       <q-select
         v-model="entityType.value"
         use-input
-        :float-label="entityType.label"
+        :label="entityType.label"
         :options="entityTypes"
         :error="$v.entityType.$error"
         class="q-pa-sm q-mt-md"
