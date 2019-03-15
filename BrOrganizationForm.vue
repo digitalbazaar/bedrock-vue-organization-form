@@ -76,8 +76,7 @@ export default {
   },
   data() {
     return {
-      entityTypes,
-      previousEntityType: null
+      entityTypes
     };
   },
   computed: {
