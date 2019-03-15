@@ -24,22 +24,12 @@
     <div class="col-xs-12">
       <q-select
         v-model="entityType.value"
-        use-input
         :label="entityType.label"
         :options="entityTypes"
         :error="$v.entityType.$error"
         class="q-pa-sm q-mt-md"
-        @filter="filterEntities"
         @blur="$v.entityType.$touch"
-        @keyup="$v.entityType.$touch">
-        <template v-slot:no-option>
-          <q-item>
-            <q-item-section class="text-grey">
-              No results
-            </q-item-section>
-          </q-item>
-        </template>
-      </q-select>
+        @keyup="$v.entityType.$touch" />
     </div>
     <div class="col-xs-12">
       <slot />
