@@ -106,15 +106,6 @@ export default {
           entityType: 'Entity Type'
         }});
       this.$emit('input', updatedLabels);
-    },
-    filterEntities(val, update) {
-      this.entityType.value = '';
-      if(!val) {
-        update(() => this.entityTypes = entityTypes);
-      }
-      const startsWith = new RegExp(`^${val}`, 'i');
-      update(() => this.entityTypes = entityTypes.filter(
-        ({label, value}) => startsWith.test(label) || startsWith.test(value)));
     }
   }
 };
