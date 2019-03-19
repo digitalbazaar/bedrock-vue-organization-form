@@ -30,5 +30,9 @@ export default [
   {
     "label": "Professional Corporation",
     "value": "PC"
+  },
+  {
+    "label": "1",
+    "value": ""
   }
 ];

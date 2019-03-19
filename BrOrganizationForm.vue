@@ -28,8 +28,7 @@
         :options="entityTypes"
         :error="$v.entityType.$error"
         class="q-pa-sm q-mt-md"
-        @blur="$v.entityType.$touch"
-        @keyup="$v.entityType.$touch" />
+        @input="$v.entityType.$touch" />
     </div>
     <div class="col-xs-12">
       <slot />
