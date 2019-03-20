@@ -10,16 +10,15 @@
         @keyup="$v.legalName.$touch" />
     </div>
     <!-- <div class="col-xs-12">
-      <q-field :error="$v.logo.$error">
         <q-select
           v-model="logo.value"
           :label="logo.label"
           filter
           :options="entityLogos"
+          :error="$v.logo.$error"
           class="q-pa-sm q-mt-md"
           @blur="$v.logo.$touch"
           @keyup="$v.logo.$touch" />
-      </q-field>
     </div> -->
     <div class="col-xs-12">
       <q-select
