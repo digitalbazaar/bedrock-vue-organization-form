@@ -8,51 +8,51 @@
 
 export default [
   {
-    "label": "Sole Proprietorship",
-    "value": "SP"
+    label: 'Sole Proprietorship',
+    value: 'SP'
   },
   {
-    "label": "General Partnership",
-    "value": "GP"
+    label: 'General Partnership',
+    value: 'GP'
   },
   {
-    "label": "Limited Partnership",
-    "value": "LP"
+    label: 'Limited Partnership',
+    value: 'LP'
   },
   {
-    "label": "Limited Liability Partnership",
-    "value": "LLP"
+    label: 'Limited Liability Partnership',
+    value: 'LLP'
   },
   {
-    "label": "Limited Liability Limited Partnership",
-    "value": "LLLP"
+    label: 'Limited Liability Limited Partnership',
+    value: 'LLLP'
   },
   {
-    "label": "Limited Liability Company",
-    "value": "LLC"
+    label: 'Limited Liability Company',
+    value: 'LLC'
   },
   {
-    "label": "Professional Limited Liability Company",
-    "value": "PLLC"
+    label: 'Professional Limited Liability Company',
+    value: 'PLLC'
   },
   {
-    "label": "C-Corporation",
-    "value": "C-CORP"
+    label: 'C-Corporation',
+    value: 'C-CORP'
   },
   {
-    "label": "S-Corporation",
-    "value": "S-CORP"
+    label: 'S-Corporation',
+    value: 'S-CORP'
   },
   {
-    "label": "Professional Corporation",
-    "value": "PC"
+    label: 'Professional Corporation',
+    value: 'PC'
   },
   {
-    "label": "Unlimited Liability Corporation",
-    "value": "ULC"
+    label: 'Unlimited Liability Corporation',
+    value: 'ULC'
   },
   {
-    "label": "Joint Venture",
-    "value": "JV"
+    label: 'Joint Venture',
+    value: 'JV'
   }
 ];
