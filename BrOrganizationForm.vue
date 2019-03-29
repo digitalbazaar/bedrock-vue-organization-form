@@ -26,8 +26,6 @@
         :label="entityType.label"
         :options="entityTypes"
         :error="$v.entityType.$error"
-        emit-value
-        map-options
         class="q-pa-sm q-mt-md"
         @input="$v.entityType.$touch" />
     </div>
@@ -76,7 +74,7 @@ export default {
   },
   data() {
     return {
-      entityTypes
+      entityTypes: entityTypes.map(({label}) => label)
     };
   },
   computed: {
