@@ -1,6 +1,6 @@
 # bedrock-vue-organization-form ChangeLog
 
-## 2.0.0 -
+## 2.0.0 - 2019-04-09
 
 ### Added
 - Add new entity types.
