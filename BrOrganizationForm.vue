@@ -1,10 +1,12 @@
 <template>
   <div class="fit">
-    <div class="q-mt-md">
+    <div class="q-mb-md">
       <q-input
         v-model="legalName.value"
+        outlined
+        stack-label
         :label="legalName.label"
-        class="q-pa-sm q-mt-md"
+        :hint="legalName.hint"
         :error="$v.legalName.$error"
         @blur="$v.legalName.$touch"
         @keyup="$v.legalName.$touch" />
@@ -20,13 +22,17 @@
           @blur="$v.logo.$touch"
           @keyup="$v.logo.$touch" />
     </div> -->
-    <div class="col-xs-12">
+    <div class="col-xs-12 q-mb-md">
       <q-select
         v-model="entityType.value"
+        outlined
+        stack-label
         :label="entityType.label"
+        :hint="entityType.hint"
         :options="entityTypes"
         :error="$v.entityType.$error"
-        class="q-pa-sm q-mt-md"
+        emit-value
+        map-options
         @input="$v.entityType.$touch" />
     </div>
     <div class="col-xs-12">
@@ -74,7 +80,7 @@ export default {
   },
   data() {
     return {
-      entityTypes: entityTypes.map(({label}) => label)
+      entityTypes
     };
   },
   computed: {
